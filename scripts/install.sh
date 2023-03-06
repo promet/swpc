@@ -103,16 +103,16 @@ init_settings
 echo "...Download remote database"
 get_database "swpc-testbed-dev-dump.sql"
 
-echo "...Import database"
-import_db "swpc-testbed-dev-dump.sql"
+# echo "...Import database"
+# import_db "swpc-testbed-dev-dump.sql"
 
 # Alternate solution: Install drupal, import config and use one of the  content sync modules
-# echo "...Installing Drupal"
-# site_install
+echo "...Installing Drupal"
+site_install
 
 echo "...Update config UUID to use one from newly installed site."
 update_uuid
-
+drush entity:delete shortcut_set
 drush cim -y
 drush updb -y
 drush cr

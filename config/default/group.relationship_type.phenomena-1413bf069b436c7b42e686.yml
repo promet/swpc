@@ -1,0 +1,17 @@
+uuid: 1f224de1-63fc-4f6a-81e4-42cb47f714a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.phenomena
+    - node.type.experiment_page
+  module:
+    - gnode
+    - node
+id: phenomena-1413bf069b436c7b42e686
+group_type: phenomena
+content_plugin: 'group_node:experiment_page'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

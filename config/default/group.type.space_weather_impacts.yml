@@ -1,0 +1,11 @@
+uuid: 9bc243d6-4af7-485a-95f0-9a9804090042
+langcode: en
+status: true
+dependencies: {  }
+id: space_weather_impacts
+label: 'Space Weather Impacts'
+description: 'Different types of space weather can affect different technologies at Earth. Solar flares can produce strong x-rays that degrade or block high-frequency radio waves used for radio communication during events known as Radio Blackout Storms. Solar Energetic Particles (energetic protons) can penetrate satellite electronics and cause electrical failure. These energetic particles also block radio communications at high latitudes in during Solar Radiation Storms. Coronal Mass Ejections (CMEs) can cause Geomagnetic Storms at Earth and induce extra currents in the ground that can degrade power grid operations. Geomagnetic storms can also modify the signal from radio navigation systems (GPS and GNSS) causing degraded accuracy. Geomagnetic storms also produce the aurora. Space weather will impact people who depend on these technologies.'
+new_revision: false
+creator_membership: true
+creator_wizard: false
+creator_roles: {  }

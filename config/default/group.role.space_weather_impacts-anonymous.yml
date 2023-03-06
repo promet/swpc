@@ -1,0 +1,15 @@
+uuid: 191db20f-323c-4618-97c8-3d979a63644a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.space_weather_impacts
+    - user.role.anonymous
+id: space_weather_impacts-anonymous
+label: Anonymous
+weight: 6
+admin: false
+scope: outsider
+global_role: anonymous
+group_type: space_weather_impacts
+permissions: {  }

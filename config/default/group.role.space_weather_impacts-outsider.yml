@@ -1,0 +1,15 @@
+uuid: 66a3c705-fa5e-4aba-ab98-acc25cd520ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.space_weather_impacts
+    - user.role.authenticated
+id: space_weather_impacts-outsider
+label: Outsider
+weight: 7
+admin: false
+scope: outsider
+global_role: authenticated
+group_type: space_weather_impacts
+permissions: {  }

@@ -1,0 +1,18 @@
+uuid: 9d40edd4-ed68-4c4b-a93e-a27cf138c92a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.phenomena
+id: group.phenomena.label
+field_name: label
+entity_type: group
+bundle: phenomena
+label: 'Phenomena Group Type'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

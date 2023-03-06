@@ -1,0 +1,15 @@
+uuid: dcb6f72c-ff5f-4805-a654-7d05260ef54d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.rc2_collaborator_demo
+    - user.role.administrator
+id: rc2_collaborator_demo-global_adm
+label: global-admin
+weight: 5
+admin: true
+scope: insider
+global_role: administrator
+group_type: rc2_collaborator_demo
+permissions: {  }

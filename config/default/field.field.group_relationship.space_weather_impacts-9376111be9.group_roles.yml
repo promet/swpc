@@ -1,0 +1,22 @@
+uuid: 04ce748a-2f2b-4404-acb5-e3ae742da29a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group_relationship.group_roles
+    - group.relationship_type.space_weather_impacts-9376111be9
+id: group_relationship.space_weather_impacts-9376111be9.group_roles
+field_name: group_roles
+entity_type: group_relationship
+bundle: space_weather_impacts-9376111be9
+label: Roles
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'group_type:group_role'
+  handler_settings:
+    group_type_id: space_weather_impacts
+field_type: entity_reference

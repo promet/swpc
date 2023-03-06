@@ -1,0 +1,9 @@
+uuid: d320ad88-867a-4179-ac5b-bac247975532
+langcode: en
+status: true
+dependencies: {  }
+id: user_admin
+label: 'User Admin'
+weight: 4
+is_admin: null
+permissions: {  }

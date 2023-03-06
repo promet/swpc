@@ -1,0 +1,15 @@
+uuid: 96d44b3c-1214-4f71-9dec-ffa3d4386987
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.phenomena
+    - user.role.administrator
+id: phenomena-global_admin
+label: global-admin
+weight: 2
+admin: true
+scope: insider
+global_role: administrator
+group_type: phenomena
+permissions: {  }

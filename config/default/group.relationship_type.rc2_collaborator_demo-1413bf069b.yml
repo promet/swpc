@@ -1,0 +1,17 @@
+uuid: c7401c7e-57aa-4c13-b5d4-eb4b75514acb
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.rc2_collaborator_demo
+    - node.type.experiment_page
+  module:
+    - gnode
+    - node
+id: rc2_collaborator_demo-1413bf069b
+group_type: rc2_collaborator_demo
+content_plugin: 'group_node:experiment_page'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

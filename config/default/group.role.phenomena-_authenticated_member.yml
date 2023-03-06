@@ -1,0 +1,15 @@
+uuid: 76d6ce8f-47f4-4238-8575-1b35813d1339
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.phenomena
+    - user.role.authenticated
+id: phenomena-_authenticated_member
+label: authenticated-member
+weight: null
+admin: false
+scope: insider
+global_role: authenticated
+group_type: phenomena
+permissions: {  }

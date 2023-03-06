@@ -1,0 +1,15 @@
+uuid: 6c2728ea-144b-44e3-8c6e-3df65e4a5b23
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.phenomena
+    - user.role.user_admin
+id: phenomena-group_creator
+label: group-creator
+weight: 1
+admin: false
+scope: insider
+global_role: user_admin
+group_type: phenomena
+permissions: {  }

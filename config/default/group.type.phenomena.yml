@@ -1,0 +1,11 @@
+uuid: a201eed0-fa96-47d4-b037-6f4917d60c06
+langcode: en
+status: true
+dependencies: {  }
+id: phenomena
+label: Phenomena
+description: 'First attempt at a phenomena type'
+new_revision: false
+creator_membership: true
+creator_wizard: false
+creator_roles: {  }

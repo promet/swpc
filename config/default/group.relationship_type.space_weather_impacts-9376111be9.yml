@@ -1,0 +1,15 @@
+uuid: 3cc2e689-ed2e-48f1-a762-a0e552b960a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.space_weather_impacts
+  module:
+    - user
+id: space_weather_impacts-9376111be9
+group_type: space_weather_impacts
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

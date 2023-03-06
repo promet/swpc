@@ -1,0 +1,23 @@
+uuid: 4e0c8d64-4446-460f-962c-0096b07749df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_relationship.rc2_collaborator_demo-9376111be9.group_roles
+    - group.relationship_type.rc2_collaborator_demo-9376111be9
+id: group_relationship.rc2_collaborator_demo-9376111be9.default
+targetEntityType: group_relationship
+bundle: rc2_collaborator_demo-9376111be9
+mode: default
+content:
+  group_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden:
+  entity_id: true
+  uid: true

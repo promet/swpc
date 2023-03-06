@@ -1,0 +1,15 @@
+uuid: 77d50e7f-5b3e-45dc-815d-0cce05e534a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.space_weather_impacts
+    - user.role.authenticated
+id: space_weather_impacts-member
+label: Member
+weight: 8
+admin: false
+scope: insider
+global_role: authenticated
+group_type: space_weather_impacts
+permissions: {  }

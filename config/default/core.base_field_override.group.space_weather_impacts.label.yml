@@ -1,0 +1,18 @@
+uuid: 125792a7-c497-4584-92f0-d67519a10d3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.space_weather_impacts
+id: group.space_weather_impacts.label
+field_name: label
+entity_type: group
+bundle: space_weather_impacts
+label: 'Space Weather Impacts'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

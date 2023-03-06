@@ -1,0 +1,17 @@
+uuid: 46b4a332-af38-461c-a83c-eb42408c7c48
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.space_weather_impacts
+    - node.type.experiment_page
+  module:
+    - gnode
+    - node
+id: space_weather_impacts-1413bf069b
+group_type: space_weather_impacts
+content_plugin: 'group_node:experiment_page'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

@@ -1,0 +1,11 @@
+uuid: ae3e4d1e-42c5-4178-a35b-e0b556cd9b11
+langcode: en
+status: true
+dependencies: {  }
+id: rc2_collaborator_demo
+label: RC2-Collaborator-Demo
+description: 'This group was created for the RC2 Stakeholder review, to demonstrate the Groups Module'
+new_revision: false
+creator_membership: true
+creator_wizard: false
+creator_roles: {  }

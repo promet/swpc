@@ -1,0 +1,15 @@
+uuid: c7d46453-0492-4207-b160-c2c87cc2386a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.rc2_collaborator_demo
+    - user.role.authenticated
+id: rc2_collaborator_demo-authentica
+label: authenticated-member
+weight: 3
+admin: false
+scope: insider
+global_role: authenticated
+group_type: rc2_collaborator_demo
+permissions: {  }

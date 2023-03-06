@@ -1,0 +1,17 @@
+uuid: 393bf682-3845-4316-a589-58a291dd31ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.phenomena
+    - node.type.product_page
+  module:
+    - gnode
+    - node
+id: phenomena-6a1a85d3acbe074d3f00a3
+group_type: phenomena
+content_plugin: 'group_node:product_page'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

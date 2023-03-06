@@ -1,0 +1,15 @@
+uuid: 644fac94-1fb9-4417-946d-5a009b0e310f
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.space_weather_impacts
+    - user.role.user_admin
+id: space_weather_impacts-impact_gro
+label: impact-group-admin
+weight: 9
+admin: true
+scope: insider
+global_role: user_admin
+group_type: space_weather_impacts
+permissions: {  }

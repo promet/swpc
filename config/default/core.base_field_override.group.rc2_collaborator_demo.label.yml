@@ -1,0 +1,18 @@
+uuid: 07597763-f626-4f3d-ab44-de6e4b367db8
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.rc2_collaborator_demo
+id: group.rc2_collaborator_demo.label
+field_name: label
+entity_type: group
+bundle: rc2_collaborator_demo
+label: 'Organization Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

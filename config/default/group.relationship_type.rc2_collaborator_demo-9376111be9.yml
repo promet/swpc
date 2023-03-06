@@ -1,0 +1,15 @@
+uuid: d38e425a-4b20-44e8-b1a8-11342c5f2b07
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.rc2_collaborator_demo
+  module:
+    - user
+id: rc2_collaborator_demo-9376111be9
+group_type: rc2_collaborator_demo
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

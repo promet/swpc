@@ -1,0 +1,15 @@
+uuid: cd588a8d-bbd9-40b9-aa53-79e71f89f26a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.rc2_collaborator_demo
+    - user.role.user_admin
+id: rc2_collaborator_demo-group_crea
+label: group-creator
+weight: 4
+admin: false
+scope: insider
+global_role: user_admin
+group_type: rc2_collaborator_demo
+permissions: {  }

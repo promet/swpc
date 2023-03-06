@@ -1,0 +1,8 @@
+uuid: 2ea6e332-125f-4695-8504-5122d8587570
+langcode: en
+status: true
+dependencies: {  }
+id: linkable_logo_block
+label: 'Linkable Logo Block'
+revision: 1
+description: 'Block to contain a logo image that is linkable'

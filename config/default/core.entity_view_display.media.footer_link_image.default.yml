@@ -1,0 +1,98 @@
+uuid: 6d1403d8-090b-4429-8bad-709c7877a287
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.footer_link_image.field_media_image_1
+    - image.style.thumbnail
+    - media.type.footer_link_image
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - svg_image
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          a760dfa0-3bbb-4dd7-a6ea-a8490b0c504a:
+            uuid: a760dfa0-3bbb-4dd7-a6ea-a8490b0c504a
+            region: content
+            configuration:
+              id: 'field_block:media:footer_link_image:field_media_image_1'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: visually_hidden
+                settings:
+                  image_link: ''
+                  image_style: thumbnail
+                  svg_attributes:
+                    width: null
+                    height: null
+                  svg_render_as_image: true
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ef4ea52e-4ed9-4d79-9e8e-317419052733:
+            uuid: ef4ea52e-4ed9-4d79-9e8e-317419052733
+            region: content
+            configuration:
+              id: 'field_block:media:footer_link_image:name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: visually_hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: media.footer_link_image.default
+targetEntityType: media
+bundle: footer_link_image
+mode: default
+content:
+  field_media_image_1:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  name:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  thumbnail: true
+  uid: true

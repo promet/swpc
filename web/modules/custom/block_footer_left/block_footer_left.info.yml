@@ -1,0 +1,7 @@
+name: Block Footer Left
+type: module
+description: Custom module to display the logo links in the Footer Left region.
+core_version_requirement: ^8 || ^9
+package: custom
+dependencies:
+  - drupal:block

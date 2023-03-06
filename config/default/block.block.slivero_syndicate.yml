@@ -1,0 +1,23 @@
+uuid: 67b910a1-9523-4171-a77d-424080c65eb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - slivero
+_core:
+  default_config_hash: S6o9EBb2UV9gP-1DWBHMYj8mGgM6oUkAgn6GjLKrLv0
+id: slivero_syndicate
+theme: slivero
+region: social
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

@@ -1,0 +1,13 @@
+account:
+  - ''
+admin:
+  - ''
+devel:
+  - ''
+footer:
+  - ''
+main:
+  0: ''
+  4c787df8-95e1-4660-9b2d-06344f424e85: 'a:22:{s:4:"uuid";a:1:{s:5:"value";s:36:"4c787df8-95e1-4660-9b2d-06344f424e85";}s:11:"revision_id";a:1:{s:5:"value";s:1:"1";}s:8:"langcode";a:1:{s:5:"value";s:2:"en";}s:6:"bundle";a:1:{s:9:"target_id";s:4:"main";}s:16:"revision_created";a:1:{s:5:"value";s:10:"1676770120";}s:13:"revision_user";b:0;s:20:"revision_log_message";b:0;s:7:"enabled";a:1:{s:5:"value";s:1:"1";}s:5:"title";a:1:{s:5:"value";s:4:"Home";}s:11:"description";a:1:{s:5:"value";s:12:"Testbed home";}s:9:"menu_name";a:1:{s:5:"value";s:4:"main";}s:4:"link";a:3:{s:3:"uri";s:13:"entity:node/1";s:5:"title";N;s:7:"options";a:0:{}}s:8:"external";a:1:{s:5:"value";s:1:"0";}s:10:"rediscover";a:1:{s:5:"value";s:1:"0";}s:6:"weight";a:1:{s:5:"value";s:1:"0";}s:8:"expanded";a:1:{s:5:"value";s:1:"0";}s:6:"parent";b:0;s:7:"changed";a:1:{s:5:"value";s:10:"1676770120";}s:16:"default_langcode";a:1:{s:5:"value";s:1:"1";}s:16:"revision_default";a:1:{s:5:"value";s:1:"1";}s:29:"revision_translation_affected";a:1:{s:5:"value";s:1:"1";}s:9:"view_mode";b:0;}'
+tools:
+  - ''

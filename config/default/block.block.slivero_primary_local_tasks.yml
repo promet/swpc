@@ -1,0 +1,22 @@
+uuid: 255d3939-d9d0-4343-856b-922429e9a188
+langcode: en
+status: true
+dependencies:
+  theme:
+    - slivero
+_core:
+  default_config_hash: 7IT0maZ7V1Mjy9E57smHRnEJKi47Bqj8dE96A7KrQ8Q
+id: slivero_primary_local_tasks
+theme: slivero
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

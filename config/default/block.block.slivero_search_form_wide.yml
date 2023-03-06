@@ -1,0 +1,23 @@
+uuid: 378e6fd3-32e4-443c-8be7-f44f6909a3b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - slivero
+_core:
+  default_config_hash: 00E2rYc-cIuzfNY0YSexncI0hiUZ9XJyHOnXCWIU33E
+id: slivero_search_form_wide
+theme: slivero
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

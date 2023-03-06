@@ -1,0 +1,59 @@
+uuid: 9c4debe6-d37a-40ca-a2be-428a719148e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_view.bp_background
+    - field.field.paragraph.bp_view.bp_header
+    - field.field.paragraph.bp_view.bp_view
+    - field.field.paragraph.bp_view.bp_width
+    - paragraphs.paragraphs_type.bp_view
+  module:
+    - field_layout
+    - layout_discovery
+    - viewsreference
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+_core:
+  default_config_hash: Pp3Ur5TW16yYMzRe180QTOV74wT600VtNTCEY07NErc
+id: paragraph.bp_view.default
+targetEntityType: paragraph
+bundle: bp_view
+mode: default
+content:
+  bp_background:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  bp_header:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  bp_view:
+    type: viewsreference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+    third_party_settings: {  }
+  bp_width:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

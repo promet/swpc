@@ -1,0 +1,78 @@
+uuid: a00aa71c-5494-4b6a-8eb9-29b7bfe8fbe6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.document.field_media_document
+    - image.style.thumbnail
+    - media.type.document
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - svg_image
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          bcaf21bd-80e8-4234-97e3-18c64f44c364:
+            uuid: bcaf21bd-80e8-4234-97e3-18c64f44c364
+            region: content
+            configuration:
+              id: 'field_block:media:document:thumbnail'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: thumbnail
+                  svg_attributes:
+                    width: null
+                    height: null
+                  svg_render_as_image: true
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: YcWqjhIlo-2RZUM5ogvRsrKB7M3voF2XB3lVLwgOlLU
+id: media.document.media_library
+targetEntityType: media
+bundle: document
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_document: true
+  name: true
+  uid: true

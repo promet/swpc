@@ -1,0 +1,211 @@
+uuid: f32941f8-4724-4321-b4d5-e999a062d544
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_modal.bp_background
+    - field.field.paragraph.bp_modal.bp_header
+    - field.field.paragraph.bp_modal.bp_modal_body
+    - field.field.paragraph.bp_modal.bp_modal_button_text
+    - field.field.paragraph.bp_modal.bp_modal_footer
+    - field.field.paragraph.bp_modal.bp_modal_title
+    - field.field.paragraph.bp_modal.bp_width
+    - paragraphs.paragraphs_type.bp_modal
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - options
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          5897095d-d596-440a-a41d-62fcc9807c7a:
+            uuid: 5897095d-d596-440a-a41d-62fcc9807c7a
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_modal:bp_background'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_key
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          f3619d36-030c-4c25-95cf-ecafa2a9a7ef:
+            uuid: f3619d36-030c-4c25-95cf-ecafa2a9a7ef
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_modal:bp_width'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_key
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          7f918e3d-df14-4f1d-8d68-2d485ef5d95a:
+            uuid: 7f918e3d-df14-4f1d-8d68-2d485ef5d95a
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_modal:bp_header'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          48e53399-e23d-4118-9b1b-5757addb382b:
+            uuid: 48e53399-e23d-4118-9b1b-5757addb382b
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_modal:bp_modal_button_text'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          5b9d2810-9a6d-4a0a-a79a-98f4031e40eb:
+            uuid: 5b9d2810-9a6d-4a0a-a79a-98f4031e40eb
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_modal:bp_modal_title'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          32e77f79-dcab-45d0-a1f1-dc20614e9f55:
+            uuid: 32e77f79-dcab-45d0-a1f1-dc20614e9f55
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_modal:bp_modal_body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          106046fb-8cea-40ef-9349-76c5333fcb8f:
+            uuid: 106046fb-8cea-40ef-9349-76c5333fcb8f
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_modal:bp_modal_footer'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: dIHDr7rlChozgASy7cEPEvWISQXUM9RNjCmcIq17pBQ
+id: paragraph.bp_modal.default
+targetEntityType: paragraph
+bundle: bp_modal
+mode: default
+content:
+  bp_background:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  bp_header:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  bp_modal_body:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  bp_modal_button_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  bp_modal_footer:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  bp_modal_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  bp_width:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  uid: true

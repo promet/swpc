@@ -1,0 +1,26 @@
+uuid: a90be282-1381-407e-97a3-5f6e21917ad0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - swpc_bootstrap
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: swpc_bootstrap_page_title
+theme: swpc_bootstrap
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

@@ -1,0 +1,95 @@
+# This theme is marked as @internal. It is intended to evolve and change over
+# minor releases.
+# As the UI of Drupal improves between minor versions, the markup and assets in
+# the Slivero theme will change. The Slivero theme is not backwards compatible
+# If you wish to modify the output or assets of Slivero you can:
+# 1. Copy the whole of Slivero and rename it as your own theme. You will need to
+# manually manage your own updates if you want to stay up to date with Slivero's
+# bug fixes and feature support.
+#
+# 2. Sub-theme Slivero. This is only recommended if you want to make minor
+# tweaks and understand that Slivero could break your modifications as it
+# changes.
+name: Slivero
+type: theme
+base theme: false
+description: 'A copy of Olivero - a clean, accessible, and flexible Drupal front-end theme.'
+alt text: 'Screenshot of Slivero, Drupal front-end theme.'
+package: Custom
+core_version_requirement: ^9
+version: VERSION
+libraries:
+  - slivero/global-styling
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  hero: 'Hero (full width)'
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  social: Social Bar
+  content_above: Content Above
+  content: Content
+  sidebar: 'Sidebar'
+  content_below: 'Content Below'
+  footer_left: 'Footer Left'
+  footer_center: 'Footer Center'
+libraries-override:
+  system/admin:
+    css:
+      theme:
+        css/system.admin.css: false
+  system/base:
+    css:
+      component:
+        css/components/ajax-progress.module.css: css/components/ajax-progress.module.css
+        css/components/autocomplete-loading.module.css: css/components/autocomplete-loading.module.css
+  core/drupal.checkbox: false
+  core/drupal.dropbutton:
+    css:
+      component:
+        misc/dropbutton/dropbutton.css: css/components/dropbutton.css
+  core/drupal.vertical-tabs:
+    css:
+      component:
+        misc/vertical-tabs.css: css/components/vertical-tabs.css
+  media/oembed.formatter: false
+  layout_builder/twocol_section: slivero/layout_builder_twocol_section
+  layout_builder/threecol_section: slivero/layout_builder_threecol_section
+  layout_builder/fourcol_section: slivero/layout_builder_fourcol_section
+libraries-extend:
+  core/drupal.message:
+    - slivero/drupal.message
+  core/drupal.collapse:
+    - slivero/details
+  core/drupal.dialog:
+    - slivero/drupal.dialog
+  core/drupal.dialog.off_canvas:
+    - slivero/dialog.off_canvas
+  core/drupal.progress:
+    - slivero/progress
+  layout_discovery/onecol:
+    - slivero/layout_discovery_section
+  layout_discovery/twocol_bricks:
+    - slivero/layout_discovery_section
+  layout_discovery/twocol:
+    - slivero/layout_discovery_section
+  layout_discovery/threecol_25_50_25:
+    - slivero/layout_discovery_section
+  layout_discovery/threecol_33_34_33:
+    - slivero/layout_discovery_section
+  node/drupal.node.preview:
+    - slivero/drupal.node.preview
+  core/ckeditor:
+    - slivero/cke-dialog
+  content_moderation/content_moderation:
+    - slivero/content_moderation
+ckeditor_stylesheets:
+  - css/base/fonts.css
+  - css/base/base.css
+  - css/components/embedded-media.css
+  - css/components/table.css
+  - css/components/text-content.css
+  - css/theme/ckeditor-frame.css
+
+ckeditor5-stylesheets: false

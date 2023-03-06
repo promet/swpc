@@ -1,0 +1,49 @@
+uuid: 941c22a5-5b2d-4e11-9ac7-19e5e8ee5912
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.linkable_logo_block
+    - field.field.block_content.linkable_logo_block.field_linkable_logo_image
+    - field.field.block_content.linkable_logo_block.field_linkable_logo_link
+    - image.style.tiny_logo_image_50_x_50_
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+    - svg_image
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: block_content.linkable_logo_block.default
+targetEntityType: block_content
+bundle: linkable_logo_block
+mode: default
+content:
+  field_linkable_logo_image:
+    type: image_image
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: tiny_logo_image_50_x_50_
+    third_party_settings: {  }
+  field_linkable_logo_link:
+    type: link_default
+    weight: 27
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

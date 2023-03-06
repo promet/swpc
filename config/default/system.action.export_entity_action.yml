@@ -1,0 +1,13 @@
+uuid: d3a46277-2ed3-4ed6-bf1f-f6147037350d
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_synchronizer
+_core:
+  default_config_hash: m7b_fDksl_Wti7FTpvUzFiTpOVQy9FgPBy560uHke50
+id: export_entity_action
+label: 'Export entity'
+type: node
+plugin: export_entity_action
+configuration: {  }

@@ -1,0 +1,22 @@
+uuid: 1ee7493e-f3c6-46ca-9006-5a80d82fc183
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - slivero
+_core:
+  default_config_hash: fiAunnzF-wNlyQeFX0lqJLl4kn9TUZekfBKLmrzTJGM
+id: slivero_messages
+theme: slivero
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,116 @@
+uuid: 688f3e06-78ee-4afd-89c0-c16bf45e1d68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_accordion_section.bp_accordion_section_body
+    - field.field.paragraph.bp_accordion_section.bp_accordion_section_title
+    - field.field.paragraph.bp_accordion_section.bp_show_button
+    - paragraphs.paragraphs_type.bp_accordion_section
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9b8bbea5-faeb-43a3-9d31-84028cde1dca:
+            uuid: 9b8bbea5-faeb-43a3-9d31-84028cde1dca
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_accordion_section:bp_accordion_section_title'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          accbae92-d0ca-41ca-a206-67eeafad36f8:
+            uuid: accbae92-d0ca-41ca-a206-67eeafad36f8
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_accordion_section:bp_accordion_section_body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          f4610305-fb21-42f8-a38b-fa16245be82c:
+            uuid: f4610305-fb21-42f8-a38b-fa16245be82c
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_accordion_section:bp_show_button'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: hidden
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: YWoekjQ8sa9OCruOV2rfhZqALSActgOVVQu33v3_gFw
+id: paragraph.bp_accordion_section.default
+targetEntityType: paragraph
+bundle: bp_accordion_section
+mode: default
+content:
+  bp_accordion_section_body:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  bp_accordion_section_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  bp_show_button:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  created: true
+  uid: true

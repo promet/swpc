@@ -1,0 +1,33 @@
+uuid: 7b7cf601-c30a-4364-af97-605b8527a2df
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: footer_left
+label: 'Footer Left'
+code: |-
+  .column {
+  	float: left;
+  	width: 50%;
+  	padding: 10px;
+  }
+
+  .row::after {
+  	content: "";
+  	clear: both;
+  	display: table;
+  }
+media: all
+preprocess: true
+conditions:
+  current_theme:
+    id: current_theme
+    negate: false
+    theme: slivero
+  request_path:
+    id: request_path
+    negate: true
+    pages: ''
+contexts: {  }
+conditions_require_all: true

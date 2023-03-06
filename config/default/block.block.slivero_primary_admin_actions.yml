@@ -1,0 +1,20 @@
+uuid: e26f82bd-8963-4450-aac1-8e5c9015f41a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - slivero
+_core:
+  default_config_hash: NYKFy-hpZ-wgXBkPAGPZpwwcO0RwZja4iGxgKmNDzUw
+id: slivero_primary_admin_actions
+theme: slivero
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

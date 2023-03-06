@@ -1,0 +1,27 @@
+uuid: c715bcee-cd52-4093-8a4c-d2f6e085b81a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.homepage
+  module:
+    - text
+id: node.homepage.body
+field_name: body
+entity_type: node
+bundle: homepage
+label: Body
+description: 'Use the <em>body</em> to generally describe the Testbed website.'
+required: true
+translatable: true
+default_value:
+  -
+    value: '<p>&lt;TBD&gt;</p>'
+    summary: Homepage
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: true
+field_type: text_with_summary

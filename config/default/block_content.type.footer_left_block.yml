@@ -1,0 +1,8 @@
+uuid: 69605365-5728-4d37-a897-c85e017ccff1
+langcode: en
+status: true
+dependencies: {  }
+id: footer_left_block
+label: 'Footer Left Block'
+revision: 1
+description: 'Custom block used to represent the two logos and their links in the left side of the Footer'

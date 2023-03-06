@@ -1,0 +1,157 @@
+uuid: 60adc475-7b1c-4e81-a672-6babbab7bf6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_columns_three_uneven.bp_background
+    - field.field.paragraph.bp_columns_three_uneven.bp_column_content_3
+    - field.field.paragraph.bp_columns_three_uneven.bp_column_style_3
+    - field.field.paragraph.bp_columns_three_uneven.bp_header
+    - field.field.paragraph.bp_columns_three_uneven.bp_width
+    - paragraphs.paragraphs_type.bp_columns_three_uneven
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - options
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          090755f0-2a02-43f1-bc74-e3602cee6b5e:
+            uuid: 090755f0-2a02-43f1-bc74-e3602cee6b5e
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_columns_three_uneven:bp_width'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_key
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          d5e4effb-6fdf-4eef-b677-67ea1f1ca136:
+            uuid: d5e4effb-6fdf-4eef-b677-67ea1f1ca136
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_columns_three_uneven:bp_background'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_key
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          1ecdc2c2-df21-43e3-8e6e-14d1fa9e9346:
+            uuid: 1ecdc2c2-df21-43e3-8e6e-14d1fa9e9346
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_columns_three_uneven:bp_column_style_3'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_key
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          e0d8624e-6d7d-4e81-955e-17166b4bfe15:
+            uuid: e0d8624e-6d7d-4e81-955e-17166b4bfe15
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_columns_three_uneven:bp_header'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          abd423de-f53f-4cba-86e2-e19811552119:
+            uuid: abd423de-f53f-4cba-86e2-e19811552119
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_columns_three_uneven:bp_column_content_3'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: IcVwmmVoBmu4sHk60Cfj-9y-6v-ceUpTpI5WOhnw68w
+id: paragraph.bp_columns_three_uneven.default
+targetEntityType: paragraph
+bundle: bp_columns_three_uneven
+mode: default
+content:
+  bp_background:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  bp_column_content_3:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  bp_column_style_3:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  bp_header:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  bp_width:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  uid: true

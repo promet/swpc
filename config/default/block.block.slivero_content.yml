@@ -1,0 +1,22 @@
+uuid: 08ec9bf3-4601-4844-a73f-1e62564fb2c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - slivero
+_core:
+  default_config_hash: u5-O0QikoCQ_ZxS4upEwoHLAW-1U9Fq4sssm58lOcqQ
+id: slivero_content
+theme: slivero
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

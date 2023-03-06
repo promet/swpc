@@ -1,0 +1,22 @@
+uuid: 31721f98-9745-496d-8eba-90eec08d3c74
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - swpc_bootstrap
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: swpc_bootstrap_powered
+theme: swpc_bootstrap
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

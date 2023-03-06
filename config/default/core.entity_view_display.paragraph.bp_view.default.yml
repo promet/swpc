@@ -1,0 +1,134 @@
+uuid: 577d819f-4003-4e69-9eef-6023c2aedc29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bp_view.bp_background
+    - field.field.paragraph.bp_view.bp_header
+    - field.field.paragraph.bp_view.bp_view
+    - field.field.paragraph.bp_view.bp_width
+    - paragraphs.paragraphs_type.bp_view
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - options
+    - viewsreference
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          6828fdd9-9e3d-4935-b612-c57d09fbced2:
+            uuid: 6828fdd9-9e3d-4935-b612-c57d09fbced2
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_view:bp_background'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_key
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          53194759-b4e2-4fe8-bcb8-0506f2f9712b:
+            uuid: 53194759-b4e2-4fe8-bcb8-0506f2f9712b
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_view:bp_width'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_key
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          911497b7-b7d1-4794-a08d-09dcf665837c:
+            uuid: 911497b7-b7d1-4794-a08d-09dcf665837c
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_view:bp_header'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          95730ad8-06d1-46c6-99c1-7e0998449964:
+            uuid: 95730ad8-06d1-46c6-99c1-7e0998449964
+            region: content
+            configuration:
+              id: 'field_block:paragraph:bp_view:bp_view'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: viewsreference_formatter
+                label: hidden
+                settings:
+                  plugin_types:
+                    - block
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: kMRGBA5VlfR9dAUIJ1sae7vUTCWse-Ww6wqCE3004sQ
+id: paragraph.bp_view.default
+targetEntityType: paragraph
+bundle: bp_view
+mode: default
+content:
+  bp_background:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  bp_header:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  bp_view:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  bp_width:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  uid: true

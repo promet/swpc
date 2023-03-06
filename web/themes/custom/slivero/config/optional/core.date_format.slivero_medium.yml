@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    theme:
+      - slivero
+id: slivero_medium
+label: 'Slivero Medium'
+locked: false
+pattern: 'j  F,  Y'

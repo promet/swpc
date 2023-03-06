@@ -1,0 +1,75 @@
+uuid: 7ad7b907-bc3b-4c4d-b512-65d57c0c2823
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slideshow.body
+    - field.field.node.slideshow.field_slideshow_image
+    - node.type.slideshow
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          93613617-2f64-4d1f-ae88-68a80e58f64d:
+            uuid: 93613617-2f64-4d1f-ae88-68a80e58f64d
+            region: content
+            configuration:
+              id: 'extra_field_block:node:slideshow:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          105b96b6-4ac4-4003-af11-1e97e36b6e7f:
+            uuid: 105b96b6-4ac4-4003-af11-1e97e36b6e7f
+            region: content
+            configuration:
+              id: 'field_block:node:slideshow:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.slideshow.teaser
+targetEntityType: node
+bundle: slideshow
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_slideshow_image: true

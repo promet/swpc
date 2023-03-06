@@ -1,0 +1,5 @@
+_core:
+  default_config_hash: 2VIFfYIzLIphEpkJSH9KfhEE0P66ieHfusDj6QMJIzY
+selectors: .node
+custom_vendors: /media/oembed
+ignore_selectors: ''

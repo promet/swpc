@@ -1,0 +1,16 @@
+uuid: f422ad46-f77e-435b-ae23-24b294bd5184
+langcode: en
+status: true
+dependencies: {  }
+id: footer_link_image
+label: 'Footer Link Image'
+description: 'Media Image specifically for the footer that is a link to another website'
+source: image
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_image_1
+field_map:
+  name: name
+  width: name
+  height: name

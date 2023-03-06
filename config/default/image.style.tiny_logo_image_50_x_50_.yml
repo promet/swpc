@@ -1,0 +1,15 @@
+uuid: dba981ed-34fb-48fa-a63d-2b47ee2eb12e
+langcode: en
+status: true
+dependencies: {  }
+name: tiny_logo_image_50_x_50_
+label: 'Tiny Logo Image (50 x 50)'
+effects:
+  e7fe4a52-b00a-4bc0-bbe6-355cb60d97c8:
+    uuid: e7fe4a52-b00a-4bc0-bbe6-355cb60d97c8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      anchor: center-center

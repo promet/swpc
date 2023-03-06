@@ -1,0 +1,30 @@
+uuid: 8f780992-8229-410f-8492-c206d48b5fe4
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:footer_left_block:cb97c6e7-e225-4b3b-a934-5a04e0a509ff'
+  module:
+    - block_content
+    - system
+  theme:
+    - slivero
+id: usaandnoaalogosandlinksforthefooterleftblock
+theme: slivero
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:cb97c6e7-e225-4b3b-a934-5a04e0a509ff'
+settings:
+  id: 'block_content:cb97c6e7-e225-4b3b-a934-5a04e0a509ff'
+  label: 'USA and NOAA logos and links for the Footer Left Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: ''

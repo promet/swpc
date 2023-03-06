@@ -1,0 +1,25 @@
+uuid: 88f833ba-2b86-4d6c-9786-fcc7bd100cd8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b00ce8b9-1acd-4d00-8bdc-0511abd4a58a'
+  module:
+    - block_content
+  theme:
+    - slivero
+id: normalfooterleftblock
+theme: slivero
+region: footer_left
+weight: 0
+provider: null
+plugin: 'block_content:b00ce8b9-1acd-4d00-8bdc-0511abd4a58a'
+settings:
+  id: 'block_content:b00ce8b9-1acd-4d00-8bdc-0511abd4a58a'
+  label: 'Basic Footer Left Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

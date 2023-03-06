@@ -1,0 +1,22 @@
+uuid: 57778195-3fef-4ac5-bf67-1d80b24283cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - swpc_bootstrap
+_core:
+  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
+id: swpc_bootstrap_breadcrumbs
+theme: swpc_bootstrap
+region: header
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

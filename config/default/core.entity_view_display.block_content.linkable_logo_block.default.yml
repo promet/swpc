@@ -1,0 +1,115 @@
+uuid: cb7e08c8-de1f-4301-a2af-59720b811631
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.linkable_logo_block
+    - field.field.block_content.linkable_logo_block.field_linkable_logo_image
+    - field.field.block_content.linkable_logo_block.field_linkable_logo_link
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - link
+    - svg_image
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          5a2a6dba-fbc5-4c73-a3e8-bd2c9de86c1d:
+            uuid: 5a2a6dba-fbc5-4c73-a3e8-bd2c9de86c1d
+            region: content
+            configuration:
+              id: 'field_block:block_content:linkable_logo_block:field_linkable_logo_image'
+              label: 'Linkable Logo Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: visually_hidden
+                settings:
+                  image_link: ''
+                  image_style: tiny_logo_image_50_x_50_
+                  svg_attributes:
+                    width: 50
+                    height: 50
+                  svg_render_as_image: true
+                  image_loading:
+                    attribute: lazy
+                third_party_settings:
+                  linked_field:
+                    linked: true
+                    type: field
+                    destination: field_linkable_logo_link
+                    advanced: {  }
+            weight: 0
+            additional: {  }
+          a07218ff-5a45-4f40-beea-7e2960f6b69a:
+            uuid: a07218ff-5a45-4f40-beea-7e2960f6b69a
+            region: content
+            configuration:
+              id: 'field_block:block_content:linkable_logo_block:field_linkable_logo_link'
+              label: 'Linkable Logo Link'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 1
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.linkable_logo_block.default
+targetEntityType: block_content
+bundle: linkable_logo_block
+mode: default
+content:
+  field_linkable_logo_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_linkable_logo_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

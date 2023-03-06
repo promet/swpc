@@ -35,11 +35,15 @@ Here are some vitals:
 Your site will be accessible at: http://localhost:58741
 PHPMyAdmin will be accessible at: http://localhost:58742
 
+If you forgot you can use `lando info` to get the urls.
+
 Run the swpc build to build the site
 
 ```lando swpc-build```
 
 Visit your site with the URL above
+
+## Login to your new site
 
 Get a one time admin login link:
 ```lando drush uli```

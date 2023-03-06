@@ -95,3 +95,28 @@ Exmaple:
 ### Working in branches
 
 ## CI from GitLab
+
+## Theming - CSS / SASS
+
+#### To setup your SASS compiler:
+
+```
+cd web/themes/custom/swpc
+npm install
+npm install -g sass
+```
+
+#### Compile SASS
+
+```
+sass scss/style.scss css/style.css
+```
+
+#### SASS documentation
+
+[SASS Documentation](https://sass-lang.com/guide)
+
+
+## Helpful resources
+
+- [Twig debugging](https://www.drupal.org/docs/theming-drupal/twig-in-drupal/discovering-and-inspecting-variables-in-twig-templates)

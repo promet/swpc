@@ -84,6 +84,8 @@ Exmaple:
 
 ```git add -f web/modules/custom/my_custom_module/*```
 
+## How to update the content zip file
+
 ## Git Branching and Merge Requests
 
 ### Working in branches

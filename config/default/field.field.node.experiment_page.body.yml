@@ -1,0 +1,27 @@
+uuid: a06c1516-f431-43f5-bcc7-372c2f0e3385
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.experiment_page
+  module:
+    - text
+id: node.experiment_page.body
+field_name: body
+entity_type: node
+bundle: experiment_page
+label: 'Experiment Description'
+description: 'Experiment description'
+required: true
+translatable: true
+default_value:
+  -
+    value: '<p>&lt;TBD&gt;</p>'
+    summary: ''
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: true
+field_type: text_with_summary

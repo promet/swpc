@@ -22,6 +22,7 @@ settings:
       - numberedList
       - '|'
       - blockQuote
+      - drupalMedia
       - drupalInsertImage
       - '|'
       - heading
@@ -56,6 +57,8 @@ settings:
       startIndex: true
     ckeditor5_imageResize:
       allow_resize: true
+    media_media:
+      allow_view_mode_override: false
 image_upload:
   status: true
   scheme: public

@@ -1,0 +1,29 @@
+uuid: 9dbac12e-91c2-4e2e-96e8-14e2724d2455
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_experiment_hero_media_img
+    - media.type.image
+    - node.type.experiment_page
+id: node.experiment_page.field_experiment_hero_media_img
+field_name: field_experiment_hero_media_img
+entity_type: node
+bundle: experiment_page
+label: 'Experiment Hero Media Image'
+description: 'Please upload/select an Experiment Media image that best describes the experiment.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

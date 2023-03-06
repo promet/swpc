@@ -1,0 +1,38 @@
+uuid: 348ae512-a57e-459a-b38e-3656b018d9f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.product_page.body
+    - field.field.node.product_page.field_product_hero_media_image
+    - node.type.product_page
+  module:
+    - text
+    - user
+id: node.product_page.default
+targetEntityType: node
+bundle: product_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_product_hero_media_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

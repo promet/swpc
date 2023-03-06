@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:standard.front_page'
 name: Homepage
 type: homepage
-description: ''
+description: 'Use the homepage to create various kinds of landing pages for the Testbed'
 help: ''
 new_revision: true
 preview_mode: 1

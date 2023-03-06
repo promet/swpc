@@ -1,0 +1,20 @@
+uuid: 5e057801-cb66-4470-afdd-465484ccaae9
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_experiment_hero_media_img
+field_name: field_experiment_hero_media_img
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+uuid: 8accd127-d240-49ce-9208-8dc0570a6541
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: footer_logo
+title: 'Footer Logo'
+content:
+  value: '<div class="col-md-6"><img src="/themes/custom/swpc_bootstrap/images/logos/NOAA_logo_transparent.png"></div><div class="col-md-6"><img src="/themes/custom/swpc_bootstrap/images/logos/USAgov_logo.png"></div>'
+  format: full_html

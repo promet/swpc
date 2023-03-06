@@ -161,20 +161,21 @@
 
 {# Footer #}
 <footer class="bg-light text-center text-lg-start">
-  {% if page.footer_left %}
+ {# {% if block.footer_right %} #}
     {% block footer_left %}
       <div class="footer {{ container }} col-md-3" role="contentinfo">
         {{ page.footer_left }}
       </div>
     {% endblock %}
-  {% endif %}
-  {% if page.footer_right %}
+ {# {% endif %} #}
+
+  {# {% if block.footer_right %} #}
     {% block footer_right %}
       <div class="footer {{ container }} col-md-9" role="contentinfo">
         {{ page.footer_right }}
       </div>
     {% endblock %}
-  {% endif %}
+  {# {% endif %} #}
 </footer>
 
 {% if page.footer %}

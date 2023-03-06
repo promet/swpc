@@ -6,6 +6,10 @@ Clone the repo to your system
 
 ```git clone git@github.com:promet/swpc.git```
 
+cd into the newly cloned directory
+
+```cd swpc```
+
 Copy the default.settings.local.php to settings.local.php
 
 ```cp web/sites/default/default.settings.local.php web/sites/default/settings.local.php```

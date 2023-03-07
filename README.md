@@ -1,14 +1,22 @@
 # Space Weather Testbed
 
-## local install - getting started
+## Local install - prep WSL2 for Lando use
 
-Clone the repo to your system
+[These instructions](https://docs.google.com/document/d/1RAhAM5KTy6DSpIetmoxH3JZA3qLVLG_lhdFDFItIbtw/edit#bookmark=kix.ymskf7vqgf8a) allow you to set up your WSL2 environment for the first time use of Lando, and should not need to be repeated for later use of this repo
 
-```git clone git@github.com:promet/swpc.git```
+## Local install - setting up the Lando stack and Testbed install
 
-Copy the default.settings.local.php to settings.local.php
+Clone the repo to your system:
+* If pulling from Promet Source, use the following:
+  ```git clone git@github.com:promet/swpc.git```
+* If pulling from SWPC GitLab (typical case), use the following:
+  ```git clone git@swpc-gitlab-lx.swpc.noaa.gov:testbed/testbed-drupal.git```
 
-```cp web/sites/default/default.settings.local.php web/sites/default/settings.local.php```
+Copy the default.settings.local.php to settings.local.php:
+* ```cp web/sites/default/sample-settings.local.php web/sites/default/settings.local.php```
+* Pull the Drupal 9 Testbed database credentials from the SWPC Vault, enter them in ```web/sites/default/settings.local.php```, and save the file:
+  * <drupal-database-user>
+  * <drupal-database-pwd>
 
 Run lando start to get the containers up.
 
@@ -70,8 +78,8 @@ and import the zip file located in the `/content` directory in the project.
 
 ### DB Credentials
 
-user: drupal9
-pass: drupal9
+user: see <drupal-database-user> above
+pass: see <drupal-database-pwd> above
 database: drupal9
 server: database.swpctestbed.internal
 

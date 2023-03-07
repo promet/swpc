@@ -3,8 +3,8 @@
 // Docksal DB connection settings.
 $databases['default']['default'] = array (
   'database' => 'drupal9',
-  'username' => 'drupal9',
-  'password' => 'drupal9',
+  'username' => '<drupal-database-user>',
+  'password' => '<drupal-database-pwd>',
   'prefix' => '',
   'host' => 'database.swpctestbed.internal',
   'port' => '3306',

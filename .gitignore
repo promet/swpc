@@ -8,6 +8,8 @@
 # Ignore configuration files that may contain sensitive information
 /web/sites/*/*settings*.php
 /web/sites/*/*services*.yml
+# Exclude the sample configuration files
+!/web/sites/*/sample-settings.local.php
 
 # Ignore paths that may contain user-generated content
 /web/sites/*/files

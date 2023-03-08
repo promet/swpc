@@ -82,15 +82,49 @@ server: database.swpctestbed.internal
 ## Adding to git repo
 
 If you want to add new items in the `/web` you'll need to force git to add it as
-the `/web` die is in the ignore as the main part of it is controlled by composer.
+the `/web` directory is this directory is in the `.gitignore` file since the main
+the contents of the web directory are controlled by composer.
 
 You only need to do this when adding a new file as once added it'll be tracked by git
-regardless of the gitignore entries but if you add new files to you module they need to
+regardless of the `.gitignore` entries but if you add new files to you module they need to
 will need added with the force `-f` switch as well.
 
 Exmaple:
 
 ```git add -f web/modules/custom/my_custom_module/*```
+
+## Importing and Exporting Drupal configurations
+
+* What is Drupal configuration management? *
+Drupal configiration management refers to the  act of storing configurations that live
+in the database as code.  These are YML files that can be read and consumed by Drupal.
+
+Configuration contains things such as chosen theme, theme settings, views, content types
+and settings such as custom module configurations and what modules are enabled, etc.
+
+To import the configurations Drupal needs to know where there configuration files are
+located. This is set in the `web/sites/default/settings.php` file in the
+`$settings['config_sync_directory']` variable.
+
+For this project it is `$settings['config_sync_directory'] = '../config/default';`
+
+To import and export we use `drush`
+
+Import:  `drush config:import` or `drush cim`
+
+Export: `drush config:export` or `drush cex`
+
+When you export new config you'll need to add it to the git repository.
+
+from the project root run git add the new items you can do it one at a time or with
+the * wildcard.
+
+Example:
+```git add config/*```
+
+> This way your configrations changes, which might be updates to a view, groups configuration or
+> a new field or alterd field in a content type, make their way up to the main repo and others can
+> import test and them.
 
 ## How to update the content zip file
 
@@ -99,6 +133,80 @@ Exmaple:
 ### Working in branches
 
 ## CI from GitLab
+
+## Setup on Dev / Staging / Prod
+
+To setup the server on a server the steps are similar but we won't be using Lando.
+
+These steps assume you have a configured server with:
+- Web server (Apache, Nginx etc)
+- Mysql / MariaDB
+- PHP
+- Composer
+- Git
+
+Plus the versions requirements here: [System requirements](https://www.drupal.org/docs/system-requirements)
+
+Where ever your server docroot is, example: `/var/www/` git clone the site so you end up with
+`/var/www/<cloned-site-name>` the go into the new site directory
+
+### 1. Clone Site:
+
+```
+cd <cloned-site-name>`
+```
+
+
+### 2. Run composer install
+
+```
+composer install
+```
+Go to the `<cloned-site-name>/web/sites/default` directory and copy `default.settings.local.php` to `settings.hosting.php` and
+update the database connection info to allow connections to your database server.
+
+**Note all `drush` commands need to be run from the `web` directory in the project**
+
+### 3. Install Drupal
+
+To install Drupal from the command line you canuse the `drush site-install` command:
+
+```
+drush site-install standard --account-name=admin --account-pass=<the-drupal-admin-password-you-want> --db-url='mysql://<db-user>:<db-pass>@<db-server>/<database-name>' --site-name='Space Weather Testbed' -y
+```
+If this doesn't work you can go to the URL you are hosting the site as and walk through the install ation via the Drupal UI.
+
+### 4. Import Configuration
+
+To import the Drupal configuration use `drush cim`
+
+```
+drush cim
+```
+You will see a list of items to be added or deleted. Choose yes / no to continue (yes in this case)
+
+### 5. Content Import
+
+The last step is to import the content this will be either a content dump file or a database dump file. Check with the SWPC team.
+
+
+### 6. Ongoing Updates
+
+You can create a bash script to run and that gitlab can later SSH in to run to automate deployments for Dev based on merge requests
+
+**Example:**
+
+```
+#!/usr/bin/env bash
+
+git pull origin develop
+composer install
+cd web && \
+drush cim -y
+drush updb -y
+drush cr
+
+```
 
 ## Theming - CSS / SASS
 

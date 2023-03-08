@@ -150,12 +150,15 @@ Plus the versions requirements here: [System requirements](https://www.drupal.or
 Where ever your server docroot is, example: `/var/www/` git clone the site so you end up with
 `/var/www/<cloned-site-name>` the go into the new site directory
 
+We're going to use `/var/www` as the path for the web server root. Substitue whatever path you're using.
+
 ### 1. Clone Site:
 
 ```
 cd <cloned-site-name>`
 ```
 
+Configure your webserver to server the site out of the `/var/www/<cloned-site-name>/web` directory
 
 ### 2. Run composer install
 
@@ -194,17 +197,23 @@ The last step is to import the content this will be either a content dump file o
 
 You can create a bash script to run and that gitlab can later SSH in to run to automate deployments for Dev based on merge requests
 
-**Example:**
+#### Steps:
+1. `git pull origin develop`  Pull in changes
+2. `composer install` install any new required packes or updates
+3. `cd web` Next commands are drush and have to be run from within the actual drush site codebase
+4. `drush cim` Run config import to import any configuration changes to the site (add the -y switch to have drush automatically assume yes to confirmation prompt)
+5. `drush updb` This runs the `update db` process which runs any installer items that may be associated with drupal core or module updates
+6. `drush cr` This rebuilds the cache so your changes are reflected on the site.
+
+
+**Example `update.sh` script :**
 
 ```
 #!/usr/bin/env bash
 
 git pull origin develop
 composer install
-cd web && \
-drush cim -y
-drush updb -y
-drush cr
+cd web && \ drush cim -y && drush updb -y && drush cr
 
 ```
 

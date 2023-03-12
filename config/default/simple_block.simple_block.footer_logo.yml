@@ -7,5 +7,5 @@ dependencies:
 id: footer_logo
 title: 'Footer Logo'
 content:
-  value: '<div class="col-md-6"><img src="/themes/custom/swpc_bootstrap/images/logos/NOAA_logo_transparent.png"></div><div class="col-md-6"><img src="/themes/custom/swpc_bootstrap/images/logos/USAgov_logo.png"></div>'
+  value: '<div class="row"><div class="col-md-6"><img src="/themes/custom/swpc/images/logos/NOAA_logo_transparent.png"></div><div class="col-md-6"><img src="/themes/custom/swpc/images/logos/USAgov_logo.png"></div></div>'
   format: full_html

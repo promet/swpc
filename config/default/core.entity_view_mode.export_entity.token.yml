@@ -1,0 +1,10 @@
+uuid: 6c9b691a-0156-49b7-b99b-0e69b7deab96
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_synchronizer
+id: export_entity.token
+label: Token
+targetEntityType: export_entity
+cache: true

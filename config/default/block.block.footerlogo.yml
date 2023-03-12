@@ -1,4 +1,4 @@
-uuid: 22a38d55-6756-4223-be1e-be31d1940593
+uuid: 791ef1bb-4f2c-4b5d-bebe-fbddca5ed587
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - simple_block
   theme:
-    - swpc_bootstrap
+    - swpc
 id: footerlogo
-theme: swpc_bootstrap
+theme: swpc
 region: footer_left
 weight: 0
 provider: null

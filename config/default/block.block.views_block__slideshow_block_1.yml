@@ -1,4 +1,4 @@
-uuid: 3ae283cf-c1b3-4712-8a26-1e0ec12bc929
+uuid: 3adf416e-dbf2-418c-bfcf-c953deecd8fb
 langcode: en
 status: true
 dependencies:
@@ -8,19 +8,19 @@ dependencies:
     - system
     - views
   theme:
-    - bootstrap
+    - swpc
 id: views_block__slideshow_block_1
-theme: bootstrap
+theme: swpc
 region: content
-weight: -7
+weight: -1
 provider: null
 plugin: 'views_block:slideshow-block_1'
 settings:
   id: 'views_block:slideshow-block_1'
-  label: 'Space Weather Testbed'
+  label: ''
   label_display: '0'
   provider: views
-  views_label: 'Space Weather Testbed'
+  views_label: ''
   items_per_page: none
 visibility:
   request_path:

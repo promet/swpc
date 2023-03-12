@@ -1,0 +1,27 @@
+uuid: 108f71bb-6a15-411b-9b78-9729dd5d5f5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - swpc
+_core:
+  default_config_hash: oiujWyyI08PJkWiCAy41NWTYhYIv9KJ0RsDZHkf7ZkU
+id: swpc_main_navigation
+theme: swpc
+region: nav_main
+weight: -7
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

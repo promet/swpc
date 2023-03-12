@@ -1,0 +1,20 @@
+uuid: 892982e6-c459-4220-9646-8208aa190537
+langcode: en
+status: true
+dependencies:
+  theme:
+    - swpc
+_core:
+  default_config_hash: 94hVdEUERt2EVAGjdO8nL4Xr0CD4_rRk7bmlO1sAqLk
+id: swpc_page_title
+theme: swpc
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

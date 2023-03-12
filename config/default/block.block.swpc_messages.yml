@@ -1,0 +1,22 @@
+uuid: 62640e98-5e84-4c18-be0f-7e6243ebd169
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - swpc
+_core:
+  default_config_hash: B_llaNmRXP3MteUJHPU2ohcE0yokGux1bfnWqJfMwKo
+id: swpc_messages
+theme: swpc
+region: content
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

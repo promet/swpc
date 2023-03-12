@@ -1,0 +1,25 @@
+uuid: e1a58519-12ef-410c-9336-2f1ca354b31c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - swpc
+_core:
+  default_config_hash: EIQew5gzFG4KNt1V0YXZOMc34OTurwJzFwQShm-7C2A
+id: swpc_branding
+theme: swpc
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

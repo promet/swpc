@@ -7,7 +7,7 @@ dependencies:
     - user.role.authenticated
 id: phenomena-_authenticated_member
 label: authenticated-member
-weight: null
+weight: 9
 admin: false
 scope: insider
 global_role: authenticated

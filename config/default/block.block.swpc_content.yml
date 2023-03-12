@@ -1,0 +1,26 @@
+uuid: d2b79708-416d-4378-94d7-3d4a167053d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - swpc
+_core:
+  default_config_hash: WO4nuQu5FmZ1qrSwRq0oN-IgX5XlwpliqVMZShF-gHE
+id: swpc_content
+theme: swpc
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

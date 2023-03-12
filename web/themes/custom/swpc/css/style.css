@@ -11721,14 +11721,19 @@ code {
 
 footer.mt-auto.footer-dark.text-light.bg-secondary {
   background-color: #2137fc !important;
-  color: #fff;
 }
-footer.mt-auto.footer-dark.text-light.bg-secondary a {
+footer.mt-auto.footer-dark.text-light.bg-secondary .menu--footer .nav.navbar-nav a, footer.mt-auto.footer-dark.text-light.bg-secondary .menu--footer .media-library-view--widget .navbar-nav.view-header a, .media-library-view--widget footer.mt-auto.footer-dark.text-light.bg-secondary .menu--footer .navbar-nav.view-header a {
   color: #fff;
 }
 footer.mt-auto.footer-dark.text-light.bg-secondary .row {
   max-width: 1280px;
   margin: 0 auto;
+}
+footer.mt-auto.footer-dark.text-light.bg-secondary .row .footer-logos {
+  max-width: 150px;
+}
+footer.mt-auto.footer-dark.text-light.bg-secondary .row .footer-logos img {
+  width: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

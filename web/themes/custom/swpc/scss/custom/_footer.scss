@@ -1,11 +1,21 @@
 footer.mt-auto.footer-dark.text-light.bg-secondary {
   background-color: $primary !important;
-  color: #fff;
-  a {
-    color: #fff;
+  // color: #fff;
+  .menu--footer .nav.navbar-nav {
+    a {
+      color: #fff;
+    }
   }
+
   .row {
     max-width: 1280px;
     margin: 0 auto;
+    .footer-logos {
+      max-width: 150px;
+      img {
+        width: 60px;
+      }
+    }
+
   }
 }

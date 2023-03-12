@@ -1,4 +1,4 @@
-uuid: fc935422-3f07-4a44-ace2-8445bec62859
+uuid: c01782a5-87ab-4674-baa1-519b853a551e
 langcode: en
 status: true
 dependencies:
@@ -8,18 +8,16 @@ dependencies:
     - system
   theme:
     - swpc
-_core:
-  default_config_hash: xZsGnJSH65k0HtCrLfkQIKqkQQqqUaWTqWwH62MayBM
-id: swpc_footer
+id: footer
 theme: swpc
-region: footer
-weight: -6
+region: footer_right
+weight: 0
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: Footer
-  label_display: '0'
+  label: Links
+  label_display: visible
   provider: system
   level: 1
   depth: 0

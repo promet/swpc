@@ -11719,8 +11719,16 @@ code {
   overflow-y: auto;
 }
 
-footer {
-  background-color: #2137fc;
+footer.mt-auto.footer-dark.text-light.bg-secondary {
+  background-color: #2137fc !important;
+  color: #fff;
+}
+footer.mt-auto.footer-dark.text-light.bg-secondary a {
+  color: #fff;
+}
+footer.mt-auto.footer-dark.text-light.bg-secondary .row {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

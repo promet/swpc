@@ -1,3 +1,11 @@
-footer {
-  background-color: $primary;
+footer.mt-auto.footer-dark.text-light.bg-secondary {
+  background-color: $primary !important;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+  .row {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 }

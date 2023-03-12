@@ -1,0 +1,22 @@
+uuid: 791ef1bb-4f2c-4b5d-bebe-fbddca5ed587
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.footer_logo
+  module:
+    - simple_block
+  theme:
+    - swpc
+id: footerlogo
+theme: swpc
+region: footer_left
+weight: 0
+provider: null
+plugin: 'simple_block:footer_logo'
+settings:
+  id: 'simple_block:footer_logo'
+  label: 'Footer Logo'
+  label_display: '0'
+  provider: simple_block
+visibility: {  }

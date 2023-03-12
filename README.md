@@ -260,8 +260,21 @@ Configure your webserver to server the site out of the `/var/www/<cloned-site-na
 ```
 composer install
 ```
-Go to the `<cloned-site-name>/web/sites/default` directory and copy `default.settings.local.php` to `settings.hosting.php` and
-update the database connection info to allow connections to your database server.
+
+### Step 3: Prepare Drupal for installation
+
+#### Connect to the database
+
+Go to the `<cloned-site-name>/web/sites/default` directory and copy `default.settings.local.php` to `settings.hosting.php` and update the database connection info to facillitate connection to your database server.
+
+#### Make files dir writeable
+
+From the `web/sites/default` directory:
+
+```
+chmod 755 files
+```
+
 
 **Note all `drush` commands need to be run from the `web` directory in the project**
 
@@ -270,11 +283,48 @@ update the database connection info to allow connections to your database server
 To install Drupal from the command line you canuse the `drush site-install` command:
 
 ```
-drush site-install standard --account-name=admin --account-pass=<the-drupal-admin-password-you-want> --db-url='mysql://<db-user>:<db-pass>@<db-server>/<database-name>' --site-name='Space Weather Testbed' -y
+drush site-install standard --account-name=<admin-account-name> --account-pass=<drupal-admin-password> --site-name='Space Weather Testbed' -y
 ```
-If this doesn't work you can go to the URL you are hosting the site as and walk through the install ation via the Drupal UI.
+
+If the `site-install` process doesn't work you can go to the URL you are hosting the site as and walk through the install ation via the Drupal UI.
 
 ### Step 4:  Import Configuration
+
+#### Prpare the configuration:
+
+The following commands have to be run withing the Drupal codebase in the web directory
+
+**Remove the shortcuts in Drupal.**
+
+```
+drush entity:delete shortcut_set
+```
+
+**Update the new sites UUID to match the UUIDs in the configuration files**
+
+*Again, the following instructions assume that you are in the `web` directory of the site.*
+
+Get the UUID:
+```
+awk '{for (I=1;I<=NF;I++) if ($I == "uuid:") {print $(I+1)};}' ../config/default/system.site.yml
+```
+
+Example result:
+```
+b9e392da-4118-4b38-aef3-081fad71c444
+```
+
+
+Use the UUID returned above:
+
+```
+drush cset system.site uuid <uuid> -y
+```
+So in this example, we'd run:
+
+```
+drush cset system.site uuid b9e392da-4118-4b38-aef3-081fad71c444 -y
+```
 
 To import the Drupal configuration use `drush cim`
 
@@ -282,6 +332,18 @@ To import the Drupal configuration use `drush cim`
 drush cim
 ```
 You will see a list of items to be added or deleted. Choose yes / no to continue (yes in this case)
+
+#### Finih up and import the configuration
+
+The following runs the configuration import `cim` and runs any module or drupal updates that may exist `updb`
+
+The last step resets the cache so we see all the updates.
+
+```
+drush cim -y
+drush updb -y
+drush cr
+```
 
 ### Step 5:  Content Import
 

@@ -82,7 +82,7 @@ and import the zip file located in the `/content` directory in the project.
 * database: drupal9
 * server: database.swpctestbed.internal
 
-These are all stored in the SWPC Vault - under Applications => Drupal => 
+These are all stored in the SWPC Vault - under Applications => Drupal =>
 Testbed Lando DB connection settings)
 
 ## Adding files to the git repo
@@ -99,7 +99,7 @@ Example:
 
 ## Importing and Exporting Drupal configurations
 
-### What is Drupal configuration management? 
+### What is Drupal configuration management?
 Drupal configiration management refers to the  act of storing configurations that live
 in the database as code.  These are YML files that can be read and consumed by Drupal.
 
@@ -126,8 +126,8 @@ the * wildcard.
 Example:
 ```git add config/*```
 
-> This way your configrations changes, which might be updates to a view, 
-groups configuration or a new field or altered field in a content type, 
+> This way your configrations changes, which might be updates to a view,
+groups configuration or a new field or altered field in a content type,
 make their way up to the main repo and others can import test and them.
 
 ## How to update the content zip file
@@ -308,10 +308,31 @@ You can create a bash script to run and that gitlab can later SSH in to run to a
 git pull origin develop
 composer install
 cd web && \ drush cim -y && drush updb -y && drush cr
-
 ```
 
-## Theming - CSS / SASS
+## Development Process / Tools
+
+### How to add composer packages
+
+To use the composer require you must use lando to ensure the correct version of PHP gets invoked.
+
+Example: To add pathauto module:
+
+```
+lando composer require 'drupal/pathauto:^1.11'
+```
+
+### How to remove composer packages
+
+After ensuring that they aren't enabled or beign instantiated anywhere you can remove the package with the `remove` command
+
+Exmaple: Note you don't need the version since it'll remove the installed version.
+
+```
+lando composer remove drupal/pathauto
+```
+
+### Theming - CSS / SASS
 
 #### To setup your SASS compiler:
 
@@ -350,3 +371,61 @@ sass scss/style.scss css/style.css
       * [OSTraining's ultimate tutorial for Drupal's Paragraphs Module](https://ostraining.com/blog/drupal/paragraphs-module/)
       * [Specbee's Paragraph Module tutorial](https://www.specbee.com/blogs/drupal-paragraphs-module-drupal-8-complete-tutorial#:~:text=Add%20drupal%20Paragraphs%20to%20the%20content%20type%3A&text=To%20use%20Drupal%20Paragraphs%2C%20open,on%20%E2%80%9Csave%20and%20continue%E2%80%9D.)
 
+
+## PHPMyAdmin
+
+PHPMyAdmin is a great PHP tool that is included in these dev tools. It provides a web interface
+to alter, edit and interaact with the local DB that you are developing with.
+
+To access it you can get the URL when you `lando start` but if you need it later you can find it
+with `lando info`
+
+The below JSON is what `lando info` returns. Note close to the bottom of the JSON array is
+`service: 'phpmyadmin'` this will have the url access the tool from.
+
+This tool will just open up and shouldn't prompt you for credentials.
+
+Example JSON:
+
+```
+If you would like to customize the behavior of this message then check out:
+https://docs.lando.dev/config/releases.html
+[ { service: 'appserver',
+    urls:
+     [ 'https://localhost:59812',
+       'http://localhost:59813',
+       'http://swpc-testbed.lndo.site:8080/',
+       'https://swpc-testbed.lndo.site:4433/' ],
+    type: 'php',
+    healthy: true,
+    via: 'apache',
+    webroot: 'web',
+    config: { php: '.lando.php.ini' },
+    version: '8.1',
+    meUser: 'www-data',
+    hasCerts: true,
+    hostnames: [ 'appserver.swpctestbed.internal' ] },
+  { service: 'database',
+    urls: [],
+    type: 'mariadb',
+    healthy: true,
+    internal_connection: { host: 'database', port: '3306' },
+    external_connection: { host: '127.0.0.1', port: '59814' },
+    healthcheck: 'mysql -uroot --silent --execute "SHOW DATABASES;"',
+    creds: { database: 'drupal9', password: 'drupal9', user: 'drupal9' },
+    config: { database: '/Users/szipfel/.lando/config/drupal9/mysql.cnf' },
+    version: '10.3',
+    meUser: 'www-data',
+    hasCerts: false,
+    hostnames: [ 'database.swpctestbed.internal' ] },
+  { service: 'phpmyadmin',
+    urls: [ 'http://localhost:59815' ],
+    type: 'phpmyadmin',
+    healthy: true,
+    backends: [ 'database' ],
+    config: {},
+    version: '5.1',
+    meUser: 'www-data',
+    hasCerts: false,
+    hostnames: [ 'phpmyadmin.swpctestbed.internal' ] } ]
+    ```

@@ -1,0 +1,10 @@
+uuid: 01010890-dd2b-4f61-b148-3a9d31e077d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_synchronizer
+id: import_entity.token
+label: Token
+targetEntityType: import_entity
+cache: true

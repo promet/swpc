@@ -1,0 +1,22 @@
+uuid: 625112c3-69fd-4871-ba23-9d4de62bec38
+langcode: en
+status: true
+dependencies:
+  theme:
+    - swpc
+_core:
+  default_config_hash: Ff0_4RSG-h1Gw2-3C-i5DifxYRz0mVW9qzc_6SWOmSs
+id: swpc_local_tasks
+theme: swpc
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

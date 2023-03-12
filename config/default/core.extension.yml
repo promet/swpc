@@ -67,6 +67,7 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   update: 0
@@ -75,15 +76,14 @@ module:
   views_bootstrap: 0
   views_ui: 0
   viewsreference: 0
+  pathauto: 1
   views: 10
   paragraphs: 11
   linked_field: 100
   standard: 1000
 theme:
-  olivero: 0
   claro: 0
-  slivero: 0
-  bootstrap: 0
-  swpc_bootstrap: 0
   stable9: 0
+  bootstrap5: 0
+  swpc: 0
 profile: standard

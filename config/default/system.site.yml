@@ -4,11 +4,11 @@ langcode: en
 uuid: b9e392da-4118-4b38-aef3-081fad71c444
 name: 'Space Weather Testbed'
 mail: dev-swpc-testbed@noaa.gov
-slogan: ''
+slogan: 'NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION'
 page:
   403: ''
   404: ''
-  front: /node/1
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

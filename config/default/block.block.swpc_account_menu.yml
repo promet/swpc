@@ -1,0 +1,27 @@
+uuid: 56219576-e816-4688-86c9-1b910db8612e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - swpc
+_core:
+  default_config_hash: Wko37bV9rQNAVCDduXkPMqplrzqdJSq9Cy2YwSM-A7U
+id: swpc_account_menu
+theme: swpc
+region: nav_additional
+weight: -6
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: 0843c9f2-a5e2-4869-aa27-edc1fe84cb50
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_slider
+id: image_slider.token
+label: Token
+targetEntityType: image_slider
+cache: true

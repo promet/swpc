@@ -1,13 +1,135 @@
-account:
-  - ''
-admin:
-  - ''
-devel:
-  - ''
-footer:
-  - ''
-main:
-  0: ''
-  4c787df8-95e1-4660-9b2d-06344f424e85: 'a:22:{s:4:"uuid";a:1:{s:5:"value";s:36:"4c787df8-95e1-4660-9b2d-06344f424e85";}s:11:"revision_id";a:1:{s:5:"value";s:1:"1";}s:8:"langcode";a:1:{s:5:"value";s:2:"en";}s:6:"bundle";a:1:{s:9:"target_id";s:4:"main";}s:16:"revision_created";a:1:{s:5:"value";s:10:"1676770120";}s:13:"revision_user";b:0;s:20:"revision_log_message";b:0;s:7:"enabled";a:1:{s:5:"value";s:1:"1";}s:5:"title";a:1:{s:5:"value";s:4:"Home";}s:11:"description";a:1:{s:5:"value";s:12:"Testbed home";}s:9:"menu_name";a:1:{s:5:"value";s:4:"main";}s:4:"link";a:3:{s:3:"uri";s:13:"entity:node/1";s:5:"title";N;s:7:"options";a:0:{}}s:8:"external";a:1:{s:5:"value";s:1:"0";}s:10:"rediscover";a:1:{s:5:"value";s:1:"0";}s:6:"weight";a:1:{s:5:"value";s:1:"0";}s:8:"expanded";a:1:{s:5:"value";s:1:"0";}s:6:"parent";b:0;s:7:"changed";a:1:{s:5:"value";s:10:"1676770120";}s:16:"default_langcode";a:1:{s:5:"value";s:1:"1";}s:16:"revision_default";a:1:{s:5:"value";s:1:"1";}s:29:"revision_translation_affected";a:1:{s:5:"value";s:1:"1";}s:9:"view_mode";b:0;}'
-tools:
-  - ''
+1:
+  id:
+    value: '1'
+  uuid:
+    value: f57792ea-67af-4357-a645-4d96bfe4433d
+  revision_id:
+    value: '1'
+  langcode:
+    value: en
+  bundle:
+    target_id: footer
+  revision_created:
+    value: '1678132618'
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Space Weather Prediction Center - Official Website'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'https://www.spaceweather.gov/'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-49'
+  expanded:
+    value: '0'
+  parent: false
+  changed:
+    value: '1678132637'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  view_mode:
+    value: default
+2:
+  id:
+    value: '2'
+  uuid:
+    value: e4b30155-ae2f-4262-bc52-66e5590e0310
+  revision_id:
+    value: '2'
+  langcode:
+    value: en
+  bundle:
+    target_id: footer
+  revision_created:
+    value: '1678132634'
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Disclaimer
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'https://www.weather.gov/disclaimer'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-47'
+  expanded:
+    value: '0'
+  parent: false
+  changed:
+    value: '1678645300'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  view_mode:
+    value: default
+3:
+  id:
+    value: '3'
+  uuid:
+    value: d3210fe6-1329-4808-90db-fbe54c430032
+  revision_id:
+    value: '3'
+  langcode:
+    value: en
+  bundle:
+    target_id: footer
+  revision_created:
+    value: '1678645282'
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Privacy Policy'
+  description: false
+  menu_name:
+    value: footer
+  link:
+    uri: 'https://www.weather.gov/privacy'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '0'
+  weight:
+    value: '-48'
+  expanded:
+    value: '0'
+  parent: false
+  changed:
+    value: '1678645300'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+  view_mode:
+    value: default
